@@ -303,6 +303,14 @@ ol
       height 0.4rem
       background color-main
 
+    a
+      color color-blue
+
+  &__sub:before
+    content '\2192'
+    margin 0 2rem
+
+
   &__content
     display flex
 
@@ -519,6 +527,7 @@ ol
       margin 0
 
   &__link
+    color color-main
     border-bottom 1px solid alpha(color-blue, 0.2)
     transition all .15s trs-function
 
@@ -752,3 +761,26 @@ ol
     span
       border-bottom 1px solid alpha(color-blue, .2)
       transition border-bottom .15s trs-function
+
+.product-full
+  background color-white
+  padding 2rem
+
+  &__title
+    font-size 2.6rem
+    line-height 3.2rem
+    margin 0 0 3rem 0 !important
+    padding 0 !important
+
+  &__thumb
+    position relative
+    width 100%
+    padding-bottom 50%
+    background-color #f4f4f4
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+    margin-bottom 3rem
+
+  &__content
+    position relative
