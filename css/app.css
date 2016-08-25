@@ -254,6 +254,9 @@ ol {
   margin: 0 auto;
   padding: 0 2rem;
 }
+.page-container_white {
+  background: #fff;
+}
 .header {
   position: relative;
   background: #fff;
@@ -405,7 +408,11 @@ ol {
 }
 .headline__text {
   font-size: 2rem;
+  line-height: 3rem;
   margin: 0;
+}
+.headline__button {
+  margin-top: 3rem;
 }
 .headline_careers {
   height: 400px;
@@ -440,6 +447,23 @@ ol {
   right: 0;
   bottom: 0;
   background: rgba(52,144,236,0.5);
+}
+.headline_home {
+  height: 500px;
+  position: relative;
+  background-image: url("http://ec2-54-89-35-96.compute-1.amazonaws.com/wp-content/uploads/2014/07/city.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headline_home:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
 }
 .page {
   padding: 5rem 0;
@@ -802,6 +826,12 @@ ol {
 .btn:hover {
   background: #3490ec;
 }
+.btn_blue {
+  background: #3490ec;
+}
+.btn_blue:hover {
+  background: #586178;
+}
 .clients {
   padding: 5rem 0;
   background: #fff;
@@ -812,8 +842,8 @@ ol {
 }
 .clients__title {
   margin: 0 0 1rem 0;
-  font-size: 3.6rem;
-  line-height: 4rem;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
 }
 .clients__subtitle {
   margin: 0 0 1rem 0;
@@ -862,4 +892,83 @@ ol {
 }
 .client__job {
   font-size: 1.4rem;
+}
+.products-preview {
+  padding: 5rem 0;
+}
+.products-preview__title,
+.products-preview__subtitle {
+  text-align: center;
+}
+.products-preview__title {
+  margin: 0 0 1rem 0;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+}
+.products-preview__subtitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.products-preview__list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 5rem 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.products-preview__item {
+  width: 50%;
+  padding: 0 1.5rem;
+  margin-bottom: 3rem;
+}
+.products-preview__all {
+  text-align: center;
+}
+.small-product {
+  display: block;
+}
+.small-product:hover .small-product__thumb:before {
+  background: rgba(0,0,0,0.05);
+}
+.small-product:hover .small-product__link {
+  color: #3490ec;
+}
+.small-product:hover .small-product__link span {
+  border-bottom: 1px solid rgba(52,144,236,0.4);
+}
+.small-product__thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 50%;
+  margin-bottom: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.small-product__thumb:before {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(52,144,236,0);
+  transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.small-product__link {
+  display: block;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #586178;
+  transition: color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.small-product__link span {
+  border-bottom: 1px solid rgba(52,144,236,0.2);
+  transition: border-bottom 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
