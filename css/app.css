@@ -482,6 +482,13 @@ ol {
   height: 0.4rem;
   background: #586178;
 }
+.page__title a {
+  color: #3490ec;
+}
+.page__sub:before {
+  content: '\2192';
+  margin: 0 2rem;
+}
 .page__content {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -727,6 +734,7 @@ ol {
   margin: 0;
 }
 .dropdown__link {
+  color: #586178;
   border-bottom: 1px solid rgba(52,144,236,0.2);
   transition: all 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
@@ -971,4 +979,27 @@ ol {
 .small-product__link span {
   border-bottom: 1px solid rgba(52,144,236,0.2);
   transition: border-bottom 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.product-full {
+  background: #fff;
+  padding: 2rem;
+}
+.product-full__title {
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  margin: 0 0 3rem 0 !important;
+  padding: 0 !important;
+}
+.product-full__thumb {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+.product-full__content {
+  position: relative;
 }
